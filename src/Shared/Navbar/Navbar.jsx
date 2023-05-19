@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
-// import logonew from '../../assets/logo3.png';
+import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from 'react-tooltip'
 
 const Navbar = () => {
 
@@ -50,10 +51,16 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-end">
-                        {user ? <><img className='w-16 pr-3' src={user.photoURL} alt="" />
+                        {user ?
+                            <><div>
+                                <img data-tooltip-id="my-tooltip"
+                                    data-tooltip-content={user.displayName}
+                                    data-tooltip-place="bottom" className='w-16 pr-3' src={user.photoURL} alt="" />
+                                <Tooltip id="my-tooltip"></Tooltip>
+                            </div>
 
-                            <button className="btn"><Link onClick={handleLogOut}>Logout</Link></button></> :
-                            <button className="btn"><Link to='/login'>Login</Link></button>}
+                                <Link onClick={handleLogOut}><button className="btn btn-outline">Logout</button></Link></> :
+                            <Link to='/login'><button className="btn btn-outline">Login</button></Link>}
                     </div>
 
 
