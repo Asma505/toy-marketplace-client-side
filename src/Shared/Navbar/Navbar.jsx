@@ -11,7 +11,7 @@ const Navbar = () => {
         <li><Link to=''>My Toys</Link></li>
         <li><Link to=''>Add A Toy</Link></li>
         <li><Link to=''>Logout</Link></li>
-        <li><Link to=''>Login</Link></li>        
+        <li><Link to='/login'>Login</Link></li>        
     </>
     return (
         <div>
