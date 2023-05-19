@@ -1,13 +1,13 @@
 import useTitle from "../../hooks/useTitle";
 
 
-const Home = () => {
-    useTitle('Home');
+const MyToys = () => {
+    useTitle('My Toys');
     return (
         <div>
-            <p>This is Home</p>
+            <p>My Toys</p>
         </div>
     );
 };
 
-export default Home;
+export default MyToys;

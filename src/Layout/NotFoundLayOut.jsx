@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import notFound from '../assets/funny-png.png';
+import useTitle from "../hooks/useTitle";
 
 const NotFoundLayOut = () => {
+    useTitle('Not Found');
     return (
         <div>
 
