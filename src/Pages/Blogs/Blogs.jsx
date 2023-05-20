@@ -13,7 +13,7 @@ const Blogs = () => {
             <div className="bg-yellow-200 w-3/5 mx-auto py-5 mb-5">
                 <p className='text-center text-black font-bold text-3xl'>Questions and Answers</p>
             </div>
-            <div className='w-3/5 mx-auto mb-32'>
+            <div className='w-3/5 mx-auto mb-32 text-yellow-200'>
                 <p><span className='text-xl font-bold'>Question:</span> <span>What is an access token and refresh token? How do they work and where should we store them on the client-side?</span></p>
                 <p className='mb-5'><span className='text-xl font-bold'>Answer:</span> <span>Access token contains all the information the server needs to know if the user / device can access the resource you are requesting or not. They are usually expired tokens with a short validity period. The refresh token is used to generate a new access token.
                 <br />                

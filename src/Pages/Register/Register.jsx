@@ -54,7 +54,7 @@ const Register = () => {
 
     return (
         <div className='w-2/3 mx-auto my-28 py-10'>
-            <h3 className='text-center text-3xl font-bold'>Please Login</h3>
+            <h3 className='text-center text-3xl font-bold text-yellow-200'>Please Register</h3>
             
             <form onSubmit={handleRegister}>
                 <div className='text-left w-1/2 mx-auto'>
@@ -79,7 +79,7 @@ const Register = () => {
             </form>
             
             <div className='text-center my-3 font-bold'>
-            <p>Already Have an Account? <Link className='text-yellow-600' to="/login">Login</Link></p>
+            <p className='text-yellow-200'>Already Have an Account? <Link className='text-yellow-600' to="/login">Login</Link></p>
             </div>            
         </div>
     );
