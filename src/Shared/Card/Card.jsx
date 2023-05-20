@@ -1,13 +1,19 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Card = ({ product }) => {
 
+    const {user} = useContext(AuthContext)
+
     const { _id, picture_url, toy_name, price, rating } = product;
 
     const alert = () => {
-        Swal.fire('You have to log in first to view details')
+        if(!user){
+            Swal.fire('You have to log in first to view details')
+        }
     }
     return (
         <div className="mb-3">

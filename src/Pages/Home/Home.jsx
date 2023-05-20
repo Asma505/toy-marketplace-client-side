@@ -90,13 +90,26 @@ const Home = () => {
                 </div>
             </div>
             <h3 className="text-5xl text-yellow-200 text-center mb-10">Read Our Latest Blog Posts</h3>
-            <div className="w-3/4 mx-auto h-96 rounded-lg mb-10">
+            <div className="w-3/4 mx-auto h-96 rounded-lg mb-16">
                 <div className="hero min-h-full rounded-lg" style={{ backgroundImage: `url("https://i.ibb.co/c3GXM6k/blog.png")` }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
                             <h1 className="mb-5 text-5xl font-bold text-white">Click The Button To Read Our Latest Blog Post</h1>
                             <Link to='/blog'><button className="btn btn-primary">Our Blog</button></Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 className="text-5xl text-yellow-200 text-center mb-10">Be a Seller</h3>
+            <div className="w-11/12 mx-auto mb-16">
+                <div className="card lg:card-side shadow-xl w-11/12 mx-auto bg-yellow-200">
+                    <figure><img src="https://i.ibb.co/gMKXyTP/240-2403197-ico-download-seller-image-seller-icon-png.png" alt="Album" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title text-3xl">Sell Our Toys</h2>
+                        <p className="text-xl">Sell our toys and earn a good amount of profit.</p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary">Enroll</button>
                         </div>
                     </div>
                 </div>
