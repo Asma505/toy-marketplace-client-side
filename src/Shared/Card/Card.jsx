@@ -6,13 +6,13 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Card = ({ product }) => {
 
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
 
     const { _id, picture_url, toy_name, price, rating } = product;
 
     const alert = () => {
-        if(!user){
-            Swal.fire('You have to log in first to view details')
+        if (!user) {
+            Swal.fire('You have to log in first to view details')           
         }
     }
     return (
