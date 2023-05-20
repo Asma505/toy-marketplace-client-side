@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='bg-black py-1'>
+            <div className='bg-stone-900 py-1'>
                 <img className='w-28 mx-auto' src={logo} alt="" />
             </div>
             <div className='bg-yellow-200'>
