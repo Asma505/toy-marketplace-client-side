@@ -8,29 +8,30 @@ import golfplay from '../../assets/golfplay.png';
 import archery from '../../assets/archery.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Card from "../../Shared/Card/Card";
+
 
 
 
 
 const Home = () => {
 
-    const products = useLoaderData();    
+    const products = useLoaderData();
 
     const outdoor = products.filter(p => p.sub_category === "Outdoor Sports");
 
     const indoor = products.filter(ap => ap.sub_category === "Indoor Sports");
-    
-    const indoorOutdoor = products.filter(ap => ap.sub_category === "Indoor and Outdoor Sports");
-    
-    const productsTabOne = outdoor.map(product=> <Card key={product._id} product={product}></Card>);
-    
-    const productsTabTwo = indoor.map(product=> <Card key={product._id} product={product}></Card>);
-    
-    const productsTabThree = indoorOutdoor.map(product=> <Card key={product._id} product={product}></Card>);
 
-    
+    const indoorOutdoor = products.filter(ap => ap.sub_category === "Indoor and Outdoor Sports");
+
+    const productsTabOne = outdoor.map(product => <Card key={product._id} product={product}></Card>);
+
+    const productsTabTwo = indoor.map(product => <Card key={product._id} product={product}></Card>);
+
+    const productsTabThree = indoorOutdoor.map(product => <Card key={product._id} product={product}></Card>);
+
+
 
     useTitle('Home');
     return (
@@ -67,7 +68,7 @@ const Home = () => {
                 </div>
             </div>
             <h3 className="text-5xl text-yellow-200 text-center mb-10">Shop By Category</h3>
-            <div className="w-10/12 mx-auto bg-yellow-200 mb-5 rounded-lg">
+            <div className="w-10/12 mx-auto bg-yellow-200 mb-28 rounded-lg">
                 <div className="w-8/12 mx-auto py-5">
                     <Tabs>
                         <TabList>
@@ -86,6 +87,18 @@ const Home = () => {
                             <h2>{productsTabThree}</h2>
                         </TabPanel>
                     </Tabs>
+                </div>
+            </div>
+            <h3 className="text-5xl text-yellow-200 text-center mb-10">Read Our Latest Blog Posts</h3>
+            <div className="w-3/4 mx-auto h-96 rounded-lg mb-10">
+                <div className="hero min-h-full rounded-lg" style={{ backgroundImage: `url("https://i.ibb.co/c3GXM6k/blog.png")` }}>
+                    <div className="hero-overlay bg-opacity-60"></div>
+                    <div className="hero-content text-center text-neutral-content">
+                        <div className="max-w-md">
+                            <h1 className="mb-5 text-5xl font-bold text-white">Click The Button To Read Our Latest Blog Post</h1>
+                            <Link to='/blog'><button className="btn btn-primary">Our Blog</button></Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
