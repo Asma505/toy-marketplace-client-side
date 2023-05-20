@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 
-const Card = ({product}) => {
+const Card = ({ product }) => {
 
-    const {_id, picture_url, toy_name, price, rating} = product;
+    const { _id, picture_url, toy_name, price, rating } = product;
+
+    const alert = () => {
+        Swal.fire('You have to log in first to view details')
+    }
     return (
         <div className="mb-3">
             <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -13,7 +18,7 @@ const Card = ({product}) => {
                     <p>Price: ${price}</p>
                     <p>Rating: {rating} Stars</p>
                     <div className="card-actions">
-                        <Link to={`/details/${_id}`}><button className="btn btn-primary">View Details</button></Link>
+                        <Link onClick={alert} to={`/details/${_id}`}><button className="btn btn-primary">View Details</button></Link>
                     </div>
                 </div>
             </div>
