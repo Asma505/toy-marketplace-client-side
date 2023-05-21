@@ -36,7 +36,7 @@ const Home = () => {
     useTitle('Home');
     return (
         <div>
-            <div className="bg-yellow-200 mb-16">
+            <div className="bg-yellow-200 mb-16" data-aos="fade-right" data-aos-duration="3000">
                 <div className="w-11/12 mx-auto md:flex md:justify-center md:items-center md:gap-16">
                     <div className="md:w-1/2">
                         <img className="mb-5" src={golf} alt="" />
