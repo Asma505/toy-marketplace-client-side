@@ -36,6 +36,7 @@ const Home = () => {
     useTitle('Home');
     return (
         <div>
+            {/* Banner Section */}
             <div className="bg-yellow-200 mb-16" data-aos="fade-right" data-aos-duration="3000">
                 <div className="w-11/12 mx-auto md:flex md:justify-center md:items-center md:gap-16">
                     <div className="md:w-1/2">
@@ -46,6 +47,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* Gallery Section */}
             <h3 className="text-5xl text-yellow-200 text-center mb-10">Gallery</h3>
             <div className="w-10/12 mx-auto grid grid-cols-3 gap-3 outline outline-offset-4 outline-4 outline-yellow-200 rounded mb-16">
                 <div>
@@ -67,6 +69,9 @@ const Home = () => {
                     <img src={archery} alt="" />
                 </div>
             </div>
+
+            {/* Shop By Category Part With React Tabs */}
+
             <h3 className="text-5xl text-yellow-200 text-center mb-10">Shop By Category</h3>
             <div className="w-10/12 mx-auto bg-yellow-200 mb-28 rounded-lg">
                 <div className="w-8/12 mx-auto py-5">
@@ -89,6 +94,7 @@ const Home = () => {
                     </Tabs>
                 </div>
             </div>
+            {/* Our Blog Part */}
             <h3 className="text-5xl text-yellow-200 text-center mb-10">Read Our Latest Blog Posts</h3>
             <div className="w-3/4 mx-auto h-96 rounded-lg mb-16">
                 <div className="hero min-h-full rounded-lg" style={{ backgroundImage: `url("https://i.ibb.co/c3GXM6k/blog.png")` }}>
@@ -101,6 +107,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* Seller Part */}
             <h3 className="text-5xl text-yellow-200 text-center mb-10">Be a Seller</h3>
             <div className="w-11/12 mx-auto mb-16">
                 <div className="card lg:card-side shadow-xl w-11/12 mx-auto bg-yellow-200">

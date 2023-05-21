@@ -47,10 +47,13 @@ const MyToys = () => {
         <div className="my-10">
             <p className="text-5xl text-yellow-200 text-center mb-10">My Toys</p>
 
+            {/* ascending discending order buttons */}
             <div className="flex gap-5 justify-center mb-5">
                 <button className="btn btn-warning" onClick={handleAscensing}>Ascending By Price</button>
                 <button className="btn btn-warning" onClick={handleDescending}>Descending By Price</button>
             </div>
+
+            {/* Added Products Section */}
             <div className="w-11/12 mx-auto">
                 <div className="overflow-x-auto">
                     <table className="table table-compact w-full">

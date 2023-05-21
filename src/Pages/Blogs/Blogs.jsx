@@ -5,6 +5,7 @@ const Blogs = () => {
     useTitle('Blogs');
     return (
         <div>
+            {/* Blog Section */}
             <div className='bg-yellow-200 mb-10'>
                 <div className='text-center'>
                     <p className='text-black text-5xl font-bold py-28 mb-10'>Blog</p>                    

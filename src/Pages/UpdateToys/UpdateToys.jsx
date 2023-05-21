@@ -44,9 +44,11 @@ const UpdateToys = () => {
             })
     }
 
-    return (
+    return (        
         <div className="w-9/12 mx-auto my-16">
             <p className="text-5xl text-yellow-200 text-center my-10">Update a Toy</p>
+            
+            {/* Update Toy Section */}
             <p className="text-3xl text-yellow-200 text-center my-10">{toy_name}</p>
             <form onSubmit={handleUpdateToy}>
                 <div className="md:flex gap-5">

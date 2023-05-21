@@ -24,6 +24,7 @@ const AllToys = () => {
         <div className="my-10">
             <p className="text-5xl text-yellow-200 text-center mb-10">All Toys</p>
 
+            {/* All Toys Section */}
             <div className="form-control w-9/12 mx-auto mb-5">
                 <input onChange={(e)=>setSearch(e.target.value)} type="text" placeholder="Search…" className="input input-bordered" />
             </div>

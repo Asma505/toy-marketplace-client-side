@@ -51,6 +51,8 @@ const AddAToy = () => {
     return (
         <div className="w-10/12 mx-auto">
             <p className="text-5xl text-yellow-200 text-center my-10">Add a Toy</p>
+
+            {/* Add a Toy Section */}
             <form onSubmit={handleAddToy}>
                 <div className="md:flex gap-5">
                     <div className="form-control w-1/2">
