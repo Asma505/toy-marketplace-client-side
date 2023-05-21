@@ -20,13 +20,13 @@ const MyToys = () => {
     const [descending, setDescending] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/toy')
+        fetch('https://toy-marketplace-server-rho-rouge.vercel.app/toy')
         .then(res => res.json())
         .then(data => setAscending(data))
     },[])
     
     useEffect(()=>{
-        fetch('http://localhost:5000/toys')
+        fetch('https://toy-marketplace-server-rho-rouge.vercel.app/toys')
         .then(res => res.json())
         .then(data => setDescending(data))
     },[])

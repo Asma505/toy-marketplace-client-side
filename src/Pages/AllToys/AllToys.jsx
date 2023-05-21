@@ -11,7 +11,7 @@ const AllToys = () => {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch(`http://localhost:5000/products?limit=${toysInPage}`);
+            const response = await fetch(`https://toy-marketplace-server-rho-rouge.vercel.app/products?limit=${toysInPage}`);
 
             const data = await response.json();
             setToys(data);

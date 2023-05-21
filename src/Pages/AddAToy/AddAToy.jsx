@@ -28,7 +28,7 @@ const AddAToy = () => {
         const newToy = { toy_name, seller_name, seller_email, sub_category, price, rating, available_quantity, description, picture_url };
         console.log(newToy);        
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://toy-marketplace-server-rho-rouge.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
